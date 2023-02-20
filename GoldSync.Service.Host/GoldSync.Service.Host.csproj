@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoldSync.Service.Contracts\GoldSync.Service.Contracts.csproj" />
+    <ProjectReference Include="..\GoldSync.Service.Data\GoldSync.Service.Data.csproj" />
+  </ItemGroup>
+
+</Project>
