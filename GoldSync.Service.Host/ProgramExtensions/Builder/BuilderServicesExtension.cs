@@ -56,9 +56,7 @@ internal static class BuilderServicesExtension
     internal static IServiceCollection AddPeriodicHostedService(this IServiceCollection services)
     {
         services.AddSingleton<BackgroundServiceSettings>();
-        services.AddSingleton<PeriodicHostedService>();
-        services.AddHostedService(
-            provider => provider.GetRequiredService<PeriodicHostedService>());
+        services.AddHostedService<PeriodicHostedService>();
 
         return services;
     }
